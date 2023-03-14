@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/3a365c6802.js" crossorigin="anonymous"></script>
+    <title>Book Hive | Home</title>
+</head>
+<body>
+
+    <nav class="home-nav">   <!-- Start of Nav Section -->
+
+        <!-- Logo | BookHive-->
+        <div class="nav-logo">
+            <img src="assets/images/bee.png" alt="Book Hive">
+            <span class="book">book</span>
+            <span class="hive">hive</span> 
+        </div>
+
+        <!-- Navigation Buttons | User, Wishlist, and Books added to cart -->
+        <div class="nav-buttons">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+    </nav>  <!-- End of Nav Section -->
+
+
+
+    <aside class="home-aside"> <!-- Start of Aside Section -->
+        
+        <!-- Pages | Bookstore Page and My Collections Page-->
+        <div class="pages">
+            <a href="#" class="bookstore">Book Store</a>
+            <a href="#" class="collections">My Collections</a>
+        </div>
+        
+        <!-- Filter -->
+        <div class="filter">
+            <i class="material-symbols-outlined filter-icon">tune</i>
+            <span>Filter</span>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories-section">
+            <p class="book-categories">Categories</p>
+
+            <div>
+                <input type="checkbox" id="romance" name="book-category" value="romance">
+                <label for="romance">Romance</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="mystery" name="book-category" value="mystery">
+                <label for="mystery">Mystery</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="fantasy" name="book-category" value="fantasy">
+                <label for="fantasy">Fantasy</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="religious" name="book-category" value="religious">
+                <label for="religious">Religious</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="historical-fiction" name="book-category" value="historical-fiction">
+                <label for="historical-fiction">Historical Fiction</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="horror-thriller" name="book-category" value="horror-thriller">
+                <label for="horror-thriller">Horror/Thriller</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="sci-fi" name="book-category" value="sci-fi">
+                <label for="sci-fi">Science Fiction</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="young-adult" name="book-category" value="young-adult">
+                <label for="young-adult">Young Adult</label>
+            </div>
+        </div>
+
+        <!-- Price Range  -->
+        <div class="price-section">
+            <p class="price-range">Price Range</p>
+
+            <div>
+                <input type="checkbox" id="20-and-below" name="price" value="20-and-below">
+                <label for="20-and-below">$20 and below</label>
+            </div>
+ 
+            <div>
+                <input type="checkbox" id="21-40" name="price" value="21-40">
+                <label for="21-40">$21 to $40</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="41-60" name="price" value="41-60">
+                <label for="41-60">$41 to $60</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="61-and-above" name="price" value="61-and-above">
+                <label for="61-and-above">$61 and above</label>
+            </div>
+        </div>
+
+        <!-- Book Type -->
+        <div class="book-type-section">
+            <p class="book-type-option">
+                Book Type
+            </p>
+            <div>
+                <input type="checkbox" id="hardcover" name="book" value="hardcover">
+                <label for="hardcover">Hard Cover</label>
+            </div>
+            <div>
+                <input type="checkbox" id="paperback" name="book" value="paperback">
+                <label for="paperback">Paperback</label>
+            </div>
+        </div>
+
+        <div class="proceed-to-checkout">
+            <a href="checkout-form.html">
+                <button>
+                    Proceed to Checkout
+                </button>
+            </a>
+        </div>
+    </aside> <!-- End of Aside Section -->
+
+
+ 
+    <section class="home-section">   <!-- Start of Section Content -->
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="catalog">
+                <span>Book Store</span>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" id="search-bar" name="search" placeholder="   Enter Book title or Author">
+                <a href="#" class="search-button">
+                    Search
+                </a> 
+            </div>
+        </div>
+
+        <!-- Books Section -->
+        <div class="books-section">
+
+            <!-- Book One -->
+            <div class="book-1">
+
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+               
+                <!-- Book Card Details -->
+                <div class="book-card">
+
+                    <div class="book-details">
+                
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey that could set him free from the darkness of his soul.
+                        </p> 
+                    </div>
+                
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+                
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+                
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 1 -->
+
+            <!-- Book Two -->
+            <div class="book-2">
+            
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+            
+                <!-- Book Card Details -->
+                <div class="book-card">
+            
+                    <div class="book-details">
+            
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+            
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+            
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+            
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 2 -->
+
+            <!-- Book Three -->
+            <div class="book-3">
+            
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+            
+                <!-- Book Card Details -->
+                <div class="book-card">
+            
+                    <div class="book-details">
+            
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+            
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+            
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+            
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 3 -->
+
+            <!-- Book Four -->
+            <div class="book-4">
+            
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+            
+                <!-- Book Card Details -->
+                <div class="book-card">
+            
+                    <div class="book-details">
+            
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+            
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+            
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+            
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 4 -->
+
+            <!-- Book Five -->
+            <div class="book-5">
+
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+
+                <!-- Book Card Details -->
+                <div class="book-card">
+
+                    <div class="book-details">
+
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 5 -->
+
+            <!-- Book Six -->
+            <div class="book-6">
+
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+
+                <!-- Book Card Details -->
+                <div class="book-card">
+
+                    <div class="book-details">
+
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 6 -->
+
+            <!-- Book Seven -->
+            <div class="book-7">
+
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+
+                <!-- Book Card Details -->
+                <div class="book-card">
+
+                    <div class="book-details">
+
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 7 -->
+
+            <!-- Book Eight -->
+            <div class="book-8">
+
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+
+                <!-- Book Card Details -->
+                <div class="book-card">
+
+                    <div class="book-details">
+
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 8 -->
+
+            <!-- Book Nine -->
+            <div class="book-9">
+            
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+            
+                <!-- Book Card Details -->
+                <div class="book-card">
+            
+                    <div class="book-details">
+            
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+            
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+            
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+            
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 9 -->
+            
+            <!-- Book Ten -->
+            <div class="book-10">
+            
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+            
+                <!-- Book Card Details -->
+                <div class="book-card">
+            
+                    <div class="book-details">
+            
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+            
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+            
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+            
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 10 -->
+            
+            <!-- Book Eleven -->
+            <div class="book-11">
+            
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+            
+                <!-- Book Card Details -->
+                <div class="book-card">
+            
+                    <div class="book-details">
+            
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+            
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+            
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+            
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 11 -->
+
+            <!-- Book Twelve -->
+            <div class="book-12">
+            
+                <!-- Book Cover -->
+                <div class="book-cover">
+                    <img src="assets/images/book-2.jpg" alt="An Echo in the Darkness by Francince Rivers">
+                </div>
+            
+                <!-- Book Card Details -->
+                <div class="book-card">
+            
+                    <div class="book-details">
+            
+                        <span class="book-title">
+                            An Echo in the Darkness
+                        </span>
+                        <span class="book-subtitle">
+                            Mark of the Lion Trilogy Book #2
+                        </span>
+                        <span class="book-author">
+                            Novel by <a href="#">Francine Rivers</a>
+                        </span>
+                        <span class="book-publication">
+                            Date Published: June 10, 2015
+                        </span>
+                        <span class="book-ratings">
+                            Ratings:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <p class="story-description">
+                            Turning away from the opulence of Rome, Marcus is led by a whispering voice from the past into a journey
+                            that could set him free from the darkness of his soul.
+                        </p>
+                    </div>
+            
+                    <div class="price-buttons">
+                        <a href="#" class="hard-cover">
+                            <span class="book-type">Hard Cover</span>
+                            <span class="book-price">$79.41</span>
+                        </a>
+                        <a href="#">
+                            <span class="book-type">Paperback</span>
+                            <span class="book-price">$12.68</span>
+                        </a>
+                    </div>
+            
+                    <div class="buyer-options">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="#" class="wishlist">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                        </a>
+                        <a href="#" class="buy">
+                            Buy Now
+                        </a>
+                    </div>
+            
+                </div> <!-- End of Book Card Details -->
+            </div> <!-- End of Book 12 -->
+
+        </div> <!-- End of Books Section -->
+       
+        <div class="search-pages">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>...</button>
+            <button>9</button>
+            <button>next</button>
+        </div>
+
+        <footer>    <!-- Start of Footer Section -->
+            
+            <div class="store-info">
+                <div class="our-books">
+                    <p>Our Books</p>
+                    <a href="#">Browse All</a>
+                    <a href="#">Advanced Search</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Your Wishlist</a>
+                </div>
+                <div class="our-store">
+                    <p>Our Store</p>
+                    <a href="#">About Us</a>
+                    <a href="#">Our History</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Store Policies</a>
+                    <a href="#">Shipping</a>
+                </div>
+            </div>
+            
+            <div class="subscription">
+                <p>Join our Newsletter!</p>
+                <input type="email" id="userEmail" name="userEmail" placeholder="Enter your e-mail">
+                <a href="#">Subscribe</a>
+            </div>
+            
+            <div class="contact-info">
+                <div class="footer-logo">
+                    <img src="assets/images/bee.png" alt="Book Hive">
+                    <span class="book">book</span>
+                    <span class="hive">hive</span>
+                </div>
+                <p class="phone-number">(555) 555-1234</p>
+                <a href="#" class="footer-bookhive">bookhive@email.com</a>
+                <div class="social-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+        </footer>   <!-- End of Footer Section -->
+    </section>  <!-- End of Section Content -->
+
+</body>
+</html>

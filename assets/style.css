@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poiret+One&family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Nav Section */
+.home-nav {
+    width: 80%;
+    height: 60px;
+    margin-left: 20%;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    box-shadow: 0 5px 10px rgb(34, 34, 34);
+}
+
+/* Logo */
+.nav-logo {
+    width: 30%;
+}
+
+.nav-logo img {
+    width: 30px;
+}
+
+.nav-logo span {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+.nav-logo a {
+    text-decoration: none;
+}
+
+.nav-logo .book {
+    color: white;
+}
+
+.nav-logo .hive {
+    color: #ffcd00;
+}
+
+/* User, Wishlist, and Cart buttons */
+.nav-buttons i {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav-buttons :hover {
+    color: #ffcd00;
+}
+
+
+
+
+
+/* Aside Section */
+.home-aside {
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    position: fixed;
+    padding: 20px;
+}
+
+/* Book Store and My Collections */
+.pages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bookstore, .collections {
+    text-decoration: none;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+
+.pages :hover {
+    color: #ffcd00;
+}
+
+
+
+/* Filter */
+.filter {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.filter-icon {
+    font-size: 20px;
+}
+
+.categories-section,
+.price-section,
+.book-type-section {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+.book-categories,
+.price-range,
+.book-type-option {
+    font-size: 20px;
+}
+
+.proceed-to-checkout {
+    margin: 50px;
+}
+
+.proceed-to-checkout button {
+    background-color: #ffcd00;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+/* Section Content */
+.home-section {
+    width: 80%;
+    height: 100vh;
+    margin-left: 20%;
+}
+
+/* Search Section | Page Label, Search Bar */
+.search-section {
+    width: auto;
+    height: 100px;
+    background-color: #ffcd00;
+    padding: 50px 40px;
+    box-shadow: 0 3px 8px rgb(136, 136, 136);
+    flex-wrap: wrap;
+}
+
+.catalog {
+    font-family: 'Outfit', sans-serif;
+    margin: 30px 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.search-bar {
+    margin: 0 50px;
+    font-family: 'Outfit', sans-serif;
+    text-align: right;
+}
+
+.search-bar input {
+    width: 500px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid white;
+}
+
+.search-button {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    background-color: rgb(10, 10, 10);
+    padding: 5px;
+    border-radius: 0 20px 20px 0;
+}
+
+
+
+
+
+/* Books Section */
+.books-section {
+    width: auto;
+    height: auto;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+/* Books */
+.book-1,
+.book-2,
+.book-3,
+.book-4,
+.book-5,
+.book-6,
+.book-7,
+.book-8,
+.book-9,
+.book-10,
+.book-11,
+.book-12 {
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 10, 10);
+    margin-top: 50px;
+}
+
+.book-cover {
+    background-color: white;
+}
+
+.book-cover img {
+    display: flex;
+    width: 150px;
+    margin: 10px auto;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.book-details {
+    color: white;
+    padding: 10px;
+}
+
+.book-details span {
+    display: block;
+}
+
+.book-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.book-subtitle,
+.book-author,
+.book-publication,
+.book-ratings {
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+.book-ratings i {
+    color: #ffcd00;
+}
+
+.book-author a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.story-description {
+    font-size: 10px;
+    margin: 10px 20px;
+    text-align: justify;
+}
+
+.book-type {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.book-price {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.price-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price-buttons a {
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+
+.buyer-options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+
+.buyer-options a {
+    text-decoration: none;
+}
+
+.cart,
+.wishlist {
+    width: 70px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart i,
+.wishlist i,
+.buy i {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy {
+    width: 160px;
+    height: 39px;
+    background-color: #ffcd00;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* Search pages */
+.search-pages {
+    display: flex;
+    justify-content: center;
+}
+
+
+.search-pages button {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+
+
+
+
+/* Footer Section */
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.store-info {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.our-books,
+.our-store {
+    display: inherit;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.our-books a,
+.our-store a {
+    text-decoration: none;
+    color: white;
+    margin: auto 10px;
+}
+
+.store-info p {
+    font-size: 25px;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 25px;
+}
+
+.subscription p {
+    font-size: 25px;
+}
+
+.subscription input {
+    padding: 10px 0;
+}
+
+.subscription a {
+    background-color: #ffcd00;
+    width: 80px;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    padding: 3px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    width: 30%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.footer-logo img {
+    width: 30px;
+}
+
+.footer-logo span {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+}
+
+.footer-logo .book {
+    color: white;
+}
+
+.footer-logo .hive {
+    color: #ffcd00;
+}
+
+.phone-number {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.footer-bookhive {
+    text-decoration: none;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.social-icons {
+    color: white;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+/* Checkout Page */
+
+/* Navigation Bar Section */
+.checkout-nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    box-shadow: 0 5px 10px rgb(34, 34, 34);
+    flex-wrap: wrap;
+}
+
+.checkout {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+   
+}
+
+.checkout-page {
+    width: 30%;
+    height: 100px;
+    margin: 90px 0 0 100px;
+    display: block;
+    font-size: 25px;
+}
+
+.checkout-page a {
+    color: rgb(10, 10, 10);
+}
+
+.checkout-page a :hover {
+    color: #ffcd00;
+}
+
+.checkout-bold {
+    font-weight: bold;
+}
+
+
+
+
+
+/* Section Content */
+
+.section-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Producs in cart */ 
+
+.products-in-cart {
+    width: 500px;
+    height: 300px;
+    box-shadow: 1px 1px 10px rgb(194, 192, 192);
+    border-radius: 20px;
+}
+
+th {
+    padding: 10px; 
+    font-size: 20px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+td {
+    padding: 10px 15px;
+}
+td img {
+    width: 50px;
+}
+
+td .title, 
+td .author,
+td .hard-cover,
+td .value,
+td .sum,
+td .dev-fee,
+td .discount {
+    display: block;
+    font-size: 15px;
+}
+
+.total {
+    font-size: 20px;
+}
+
+td button {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+
+/* Billing information */
+.billing-info {
+    width: 350px;
+    height: auto;
+    background-color: rgb(10, 10, 10);
+    padding: 50px 0;
+    color: white;
+    box-shadow: 1px 1px 10px rgb(194, 192, 192);
+    border-radius: 20px;
+}
+
+.buyer-info, .delivery, .defrayal {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: rgb(10, 10, 10);
+    padding: 5px 20px;
+}
+
+.buyer-info span {
+    font-size: 15px;
+}
+
+.buyer-info input {
+    width: 300px;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+}
+
+.order {
+    text-align: center;
+    padding: 10px;
+}
+
+.order button {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #ffcd00;
+    padding: 15px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+
+
+/* Footer */
+.checkout-footer {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(10, 10, 10);
+    justify-content: space-evenly;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+
+
+
+/* Breakpoint 600px*/
+@media (max-width: 600px) {
+
+    .home-nav {
+        flex-wrap: nowrap;
+        }
+
+    .nav-logo {
+        width: 50%;
+        text-align: right;
+    }
+
+    .nav-logo img {
+        width: 35px;
+    }
+
+    .nav-buttons i {
+        color: white;
+        font-size: 15px;
+        text-align: right;
+    }
+
+    .home-aside {
+        height: 200vh;
+        width: auto;
+    }
+
+    .pages {
+        flex-direction: column;
+    }
+
+    .bookstore, .collections {
+        text-align: left;
+        margin: 5px;
+        font-size: 25px;
+    }
+
+    .categories-section,
+    .price-section,
+    .book-type-section {
+       font-size: 12px;
+    }
+
+    .book-categories,
+    .price-range,
+    .book-type-option {
+        font-size: 14px;
+    }
+
+    .proceed-to-checkout {
+        margin: 0;
+    }
+
+    .proceed-to-checkout button {
+        padding: 10px;
+        margin: 20px 12px;
+        font-size: 12px;
+    }
+
+    .search-section {
+        width: 100%;
+        height: 150px;
+        padding: 50px 5px 5px 0;
+        margin-left: 50px;
+    }
+
+    .catalog {
+        margin-left: 60px;
+    }
+    .search-bar input {
+        width: 270px;
+        font-size: 10px;
+    }
+
+    .search-button {
+        font-size: 10px;
+    }
+
+    .search-pages {
+        justify-content: right;
+    }
+
+    .search-pages button {
+        font-size: 10px;
+        margin: 20px 0;
+    }
+
+    .books-section { 
+        margin-left: 120px;
+    }
+
+    footer {
+        width: 100wh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+        }
+
+    .store-info p {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+   .our-books,
+   .our-store {
+       margin-right: 50px;
+   }
+
+   .subscription {
+       display: flex;
+       flex-direction: column;
+       color: white;
+       font-family: 'Outfit', sans-serif;
+       margin: 0;
+   }
+
+   .subscription input {
+       padding: 5px 0;
+       width: 350px;
+   }
+
+   .footer-logo {
+       width: 30%;
+       display: flex;
+       margin-top: 20px;
+   }
+
+
+
+
+
+   /*Checkout*/
+
+   .section-content {
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .billing-info {
+        margin: 50px auto;
+   }
+
+    .checkout-footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}

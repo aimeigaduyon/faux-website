@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/3a365c6802.js" crossorigin="anonymous"></script>
+    <title>Book Hive | Checkout</title>
+</head>
+<body>
+
+    <nav class="checkout-nav"> <!-- Start of Nav Section -->
+    
+        <!-- Logo | BookHive-->
+        <div class="nav-logo">
+            <img src="assets/images/bee.png" alt="Book Hive">
+            <span class="book">book</span>
+            <span class="hive">hive</span>
+        </div>
+    
+        <!-- Navigation Buttons | User, Wishlist, and Books added to cart -->
+        <div class="nav-buttons">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    
+    </nav> <!-- End of Nav Section -->
+
+
+    <section class="checkout">
+
+        <div class="checkout-page">
+            <a href="index.html">Book Store</a>
+            <span>/</span>
+            <span class="checkout-bold"> Checkout</span>
+        </div>
+
+        <div class="section-content">
+            <!-- Products in cart -->
+            <table class="products-in-cart">
+                <thead>
+                    <th colspan="4">
+                       Product/s in Cart
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="assets/images/book-2.jpg">
+                        </td>
+                        <td>
+                            <span class="title">An Echo in the Darkness</span>
+                            <span class="author">Francine Rivers</span>
+                        </td>
+                        <td>
+                            <span class="hard-cover">Hard Cover</span>
+                            <span class="value">$79.41</span>
+                        </td>
+                        <td>
+                            <button>-</button>
+                            <button>1</button>
+                            <button>+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                       <td colspan="3">
+                            <span class="sum">Sum</span>
+                       </td>
+                       <td class="value">$79.41</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <span class="dev-fee">Delivery Fee</span>
+                        </td>
+                        <td class="dev-fee">$5.38</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <span class="discount">Discount</span>
+                        </td>
+                        <td class="discount">$0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="total">
+                            <span>To be paid</span>
+                        </td>
+                        <td>
+                            <span>$84.79</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Billing information -->
+            <div class="billing-info">
+       
+                <!-- Buyer information -->
+                <div class="buyer-info">
+                    <h1>Billing Information</h1>
+                    <span>First Name</span>
+                    <input type="text" name="first-name" id="first-name" required>
+                    <span>Middle Name</span>
+                    <input type="text" name="middle-name" id="middle-name">
+                    <span>Last Name</span>
+                    <input type="text" name="last-name" id="last-name" required>
+                    <span>Email</span>
+                    <input type="email" name="buyer-email" id="buyer-email">
+                    <span>Phone Number</span>
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0]{1}[9]{1}[0-9]{9}" placeholder="ex. 09123456789" required>
+                    <span>House Number, Street Name</span>
+                    <input type="text" name="address" id="house-and-street">
+                    <span>Barangay</span>
+                    <input type="text" name="address" id="barangay">
+                    <span>City/Municipality</span>
+                    <input type="text" name="address" id="city">
+                    <span>Region</span>
+                    <select id="region" name="region">
+                        <option disabled selected>Select Here</option>
+                        <option value="1">Region I - Ilocos Region</option>
+                        <option value="2">Region II – Cagayan Valley</option>
+                        <option value="3">Region III – Central Luzon</option>
+                        <option value="4">Region IV‑A – CALABARZON</option>
+                        <option value="5">MIMAROPA Region</option>
+                        <option value="6">Region V – Bicol Region</option>
+                        <option value="7">Region VI – Western Visayas</option>
+                        <option value="8">Region VII – Central Visayas</option>
+                        <option value="9">Region VIII – Eastern Visayas</option>
+                        <option value="10">Region IX – Zamboanga Peninsula</option>
+                        <option value="11">Region X – Northern Mindanao</option>
+                        <option value="12">Region XI – Davao Region</option>
+                        <option value="13">Region XII – SOCCSKSARGEN</option>
+                        <option value="14">Region XIII – Caraga</option>
+                        <option value="15">NCR – National Capital Region</option>
+                        <option value="16">CAR – Cordillera Administrative Region</option>
+                        <option value="17">BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+                    </select>
+                    <span>ZIP Code</span>
+                    <input type="text" name="code" id="zip-code">
+                </div>
+
+                <!-- Choosing Delivery Express -->
+                <div class="delivery">
+                    <span>Choose a Delivery Express</span>
+                    <div>
+                        <input type="radio" id="j&t" name="delivery-express" value="j&t">
+                        <label for="j&t">J&T Express</label> 
+                    </div>   
+                    <div>
+                        <input type="radio" id="flash" name="delivery-express" value="flash">
+                        <label for="flash">Flash Express</label> 
+                    </div>    
+                    <div>
+                        <input type="radio" id="lbc" name="delivery-express" value="lbc">
+                        <label for="lbc">LBC Express</label> 
+                    </div>
+                    <p>
+                        Note: Delivery fees may vary depending on which delivery express you choose.
+                    </p>
+                </div>
+
+                <!-- Mode of payment -->
+                <div class="defrayal">
+                    <span>Defrayal</span>
+                    <div>
+                        <input type="radio" id="cod" name="payment" value="cod">
+                        <label for="cod">Payment upon receipt</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">Visa/Mastercard on site</label>
+                    </div> 
+                </div>
+                   
+                <div class="order">
+                    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                    <label for="subscribe">Subscribe to news and promotions</label>
+                    <button>ORDER</button>
+                </div>
+                
+            </div>
+
+        </div> <!-- End of Section Content-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="checkout-footer"> <!-- Start of Footer Section -->
+        
+            <div class="store-info">
+                <div class="our-books">
+                    <p>Our Books</p>
+                    <a href="#">Browse All</a>
+                    <a href="#">Advanced Search</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Your Wishlist</a>
+                </div>
+                <div class="our-store">
+                    <p>Our Store</p>
+                    <a href="#">About Us</a>
+                    <a href="#">Our History</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Store Policies</a>
+                    <a href="#">Shipping</a>
+                </div>
+            </div>
+        
+            <div class="subscription">
+                <p>Join our Newsletter!</p>
+                <input type="email" id="userEmail" name="userEmail" placeholder="Enter your e-mail">
+                <a href="#">Subscribe</a>
+            </div>
+        
+            <div class="contact-info">
+                <div class="footer-logo">
+                    <img src="assets/images/bee.png" alt="Book Hive">
+                    <span class="book">book</span>
+                    <span class="hive">hive</span>
+                </div>
+                <p class="phone-number">(555) 555-1234</p>
+                <a href="#" class="footer-bookhive">bookhive@email.com</a>
+                <div class="social-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+        </footer> <!-- End of Footer Section -->
+    </section>
+
+</body>
+</html>
