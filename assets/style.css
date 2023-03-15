@@ -363,10 +363,8 @@ footer {
     width: 100%;
     height: 250px;
     background-color: rgb(10, 10, 10);
-    display: flex;
-    justify-content: space-evenly;
     bottom: 0;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .store-info {
@@ -374,50 +372,25 @@ footer {
     text-decoration: none;
     color: white;
     font-family: 'Outfit', sans-serif;
+    justify-content: space-evenly;
 }
 
 .our-books,
 .our-store {
     display: inherit;
     flex-direction: column;
-    margin: 20px auto;
+    margin: 20px 0;
 }
 
 .our-books a,
 .our-store a {
     text-decoration: none;
     color: white;
-    margin: auto 10px;
+    margin: auto 0;
 }
 
 .store-info p {
     font-size: 25px;
-}
-
-.subscription {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: 'Outfit', sans-serif;
-    margin-top: 25px;
-}
-
-.subscription p {
-    font-size: 25px;
-}
-
-.subscription input {
-    padding: 10px 0;
-}
-
-.subscription a {
-    background-color: #ffcd00;
-    width: 80px;
-    text-decoration: none;
-    color: rgb(10, 10, 10);
-    padding: 3px 0;
-    text-align: center;
-    margin-top: 10px;
 }
 
 .footer-logo {
@@ -637,6 +610,8 @@ td button {
 
 
 
+
+
 /* Breakpoint 600px*/
 @media (max-width: 600px) {
 
@@ -646,7 +621,7 @@ td button {
 
     .nav-logo {
         width: 50%;
-        text-align: right;
+        margin-left: 50px;
     }
 
     .nav-logo img {
@@ -657,10 +632,11 @@ td button {
         color: white;
         font-size: 15px;
         text-align: right;
+        margin-left: -40px;
     }
 
     .home-aside {
-        height: 200vh;
+        height: 100vh;
         width: auto;
     }
 
@@ -698,7 +674,7 @@ td button {
 
     .search-section {
         width: 100%;
-        height: 150px;
+        height: 130px;
         padding: 50px 5px 5px 0;
         margin-left: 50px;
     }
@@ -706,17 +682,15 @@ td button {
     .catalog {
         margin-left: 60px;
     }
+
     .search-bar input {
-        width: 270px;
+        width: 200px;
         font-size: 10px;
     }
 
     .search-button {
         font-size: 10px;
-    }
-
-    .search-pages {
-        justify-content: right;
+        margin-right: 20px;
     }
 
     .search-pages button {
@@ -725,7 +699,7 @@ td button {
     }
 
     .books-section { 
-        margin-left: 120px;
+        justify-content: flex-end;
     }
 
     footer {
@@ -739,31 +713,27 @@ td button {
 
     .store-info p {
         font-size: 20px;
-        margin: 10px;
+        margin: 10px 0;
     }
 
    .our-books,
    .our-store {
-       margin-right: 50px;
-   }
-
-   .subscription {
-       display: flex;
-       flex-direction: column;
-       color: white;
-       font-family: 'Outfit', sans-serif;
-       margin: 0;
-   }
-
-   .subscription input {
-       padding: 5px 0;
-       width: 350px;
+       margin-right: 10px;
    }
 
    .footer-logo {
        width: 30%;
        display: flex;
-       margin-top: 20px;
+       margin-top: 10px;
+       margin-top: 30px;
+   }
+
+   .footer-logo img {
+    width: 20px;
+   }
+
+   .footer-logo span {
+       font-size: 20px;
    }
 
 
@@ -777,6 +747,11 @@ td button {
         align-items: center;
    }
 
+   .products-in-cart {
+       width: 400px;
+       height: 300px;
+   }
+
    .billing-info {
         margin: 50px auto;
    }
@@ -785,8 +760,9 @@ td button {
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: column;
         align-items: center;
         margin-left: 0;
     }
+
+    
 }
